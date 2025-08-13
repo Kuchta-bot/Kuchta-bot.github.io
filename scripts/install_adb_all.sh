@@ -10,7 +10,7 @@ install_adb_all() {
   for apk in *.apk; do
     found=true
     echo "📦 Installing: $apk"
-    adb install -r "$apk"
+    adb install "$apk"
     echo "✅ Done: $apk"
   done
 
